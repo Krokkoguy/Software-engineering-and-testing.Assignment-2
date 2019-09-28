@@ -11,4 +11,10 @@ public class HiofFizzBuzz {
         if( n%5 == 0 ) result += "Of";
         return result.length() > 0 ? result : String.valueOf(n);
     }
+
+    public static class TooNegativeException extends IllegalArgumentException {
+        public TooNegativeException(String s) {
+            super(s);
+        }
+    }
 }
