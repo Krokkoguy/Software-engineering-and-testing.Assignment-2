@@ -1,12 +1,17 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 public class HiofTester {
-    @Test
-    void test(){
-        assertEquals("1",HiofFizzBuzz.parse(1));
-        assertEquals("2",HiofFizzBuzz.parse(2));
-        assertEquals("3",HiofFizzBuzz.parse(3));
+    @ParameterizedTest
+    @CsvSource({
+            "1, 1",
+            "2, 2",
+            "3, 3",
+            "4, 4"
+    })
+    void test(String expected, int value ) {
+        assertEquals(expected, HiofFizzBuzz.parse(value));
     }
 }
