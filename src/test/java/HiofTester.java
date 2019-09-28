@@ -16,6 +16,7 @@ public class HiofTester {
 
     @Test
     void testErrors(){
+        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(0));
         assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(-1));
     }
 }
