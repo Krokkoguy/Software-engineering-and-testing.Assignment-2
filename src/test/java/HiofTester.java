@@ -8,7 +8,7 @@ public class HiofTester {
     @CsvSource({
             "1, 1",
             "2, 2",
-            "3, 3",
+            "Hi, 3",
             "4, 4"
     })
     void test(String expected, int value ) {
