@@ -18,5 +18,6 @@ public class HiofTester {
     void testErrors(){
         assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(0));
         assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(-1));
+        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(-2));
     }
 }
