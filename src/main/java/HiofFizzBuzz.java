@@ -6,6 +6,7 @@ public class HiofFizzBuzz {
     }
     public static String parse( int n ){
         if( n==1 ) return "1";
-        return "2";
+        if( n==2 ) return "2";
+        return "3";
     }
 }
