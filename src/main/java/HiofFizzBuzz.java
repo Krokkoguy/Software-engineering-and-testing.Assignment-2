@@ -5,6 +5,7 @@ public class HiofFizzBuzz {
         }
     }
     public static String parse( int n ){
-        return "1";
+        if( n==1 ) return "1";
+        return "2";
     }
 }
