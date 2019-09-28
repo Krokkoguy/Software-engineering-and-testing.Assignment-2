@@ -6,6 +6,7 @@ public class HiofFizzBuzz {
     }
     public static String parse( int n ){
         if( n == 3 ) return "Hi";
+        if( n == 5 ) return "Of";
         return String.valueOf(n);
     }
 }
