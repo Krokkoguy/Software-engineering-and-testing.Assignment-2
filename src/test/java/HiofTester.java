@@ -19,7 +19,8 @@ public class HiofTester {
             "11, 11",
             "Hi, 12",
             "13, 13",
-            "14, 14"
+            "14, 14",
+            "HiOf, 15"
     })
     void test(String expected, int value ) {
         assertEquals(expected, HiofFizzBuzz.parse(value));
