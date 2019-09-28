@@ -4,4 +4,7 @@ public class HiofFizzBuzz {
             System.out.println(i);
         }
     }
+    public static String parse( int n ){
+        return null;
+    }
 }

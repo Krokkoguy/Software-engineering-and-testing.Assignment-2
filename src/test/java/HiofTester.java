@@ -5,6 +5,6 @@ import org.junit.jupiter.api.Test;
 public class HiofTester {
     @Test
     void test(){
-        assertEquals("1",null);
+        assertEquals("1",HiofFizzBuzz.parse(1));
     }
 }
