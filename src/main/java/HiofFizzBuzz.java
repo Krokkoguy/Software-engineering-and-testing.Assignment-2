@@ -6,6 +6,7 @@ public class HiofFizzBuzz {
         }
     }
     public static String parse( int n ){
+        if( n == -1 ) throw new TooNegativeException();
         String result = "";
         if( n%3 == 0 ) result += "Hi";
         if( n%5 == 0 ) result += "Of";
@@ -13,8 +14,5 @@ public class HiofFizzBuzz {
     }
 
     public static class TooNegativeException extends IllegalArgumentException {
-        public TooNegativeException(String s) {
-            super(s);
-        }
     }
 }
