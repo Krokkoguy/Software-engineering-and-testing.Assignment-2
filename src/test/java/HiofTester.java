@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class HiofTester {
     /* ## Deloppgave 2 ## */
@@ -14,10 +15,9 @@ public class HiofTester {
         assertEquals(expected, HiofFizzBuzz.parse(value));
     }
 
-    @Test
-    void testErrors(){
-        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(0));
-        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(-1));
-        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(-2));
+    @ParameterizedTest
+    @ValueSource( ints = {0,-1,-2})
+    void testErrors( int value ){
+        assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(value));;
     }
 }
