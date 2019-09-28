@@ -7,5 +7,6 @@ public class HiofTester {
     void test(){
         assertEquals("1",HiofFizzBuzz.parse(1));
         assertEquals("2",HiofFizzBuzz.parse(2));
+        assertEquals("3",HiofFizzBuzz.parse(3));
     }
 }
