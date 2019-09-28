@@ -5,6 +5,6 @@ import org.junit.jupiter.api.Test;
 public class HiofTester {
     @Test
     void test(){
-        fail("Hello, World!");
+        assertEquals("1",null);
     }
 }
