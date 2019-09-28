@@ -8,6 +8,7 @@ public class HiofFizzBuzz {
     public static String parse( int n ){
         if( n == 0 ) throw new TooNegativeException();
         if( n == -1 ) throw new TooNegativeException();
+        if( n == -2 ) throw new TooNegativeException();
         String result = "";
         if( n%3 == 0 ) result += "Hi";
         if( n%5 == 0 ) result += "Of";
