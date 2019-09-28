@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class HiofTester {
+public class HiofFizzBuzzTester {
     /* ## Deloppgave 2 ## */
     @ParameterizedTest
     /* Valgte her å bruke @CsvFileSource i stedet for @ValueSource */
