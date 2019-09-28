@@ -15,8 +15,9 @@ public class HiofTester {
         assertEquals(expected, HiofFizzBuzz.parse(value));
     }
 
+    /* ## Deloppgave 3 ## */
     @ParameterizedTest
-    @ValueSource( ints = {0,-1,-2})
+    @ValueSource( ints = {0,-1,-2,-3,-4,-10,-200,Integer.MIN_VALUE})
     void testErrors( int value ){
         assertThrows(HiofFizzBuzz.TooNegativeException.class, ()->HiofFizzBuzz.parse(value));;
     }
