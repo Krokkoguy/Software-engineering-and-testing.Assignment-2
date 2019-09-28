@@ -5,9 +5,8 @@ public class HiofFizzBuzz {
         }
     }
     public static String parse( int n ){
-        if( n == 3 ) return "Hi";
-        if( n == 6 ) return "Hi";
-        if( n == 5 ) return "Of";
+        if( n%3 == 0 ) return "Hi";
+        if( n%5 == 0 ) return "Of";
         return String.valueOf(n);
     }
 }
